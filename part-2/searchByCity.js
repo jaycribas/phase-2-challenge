@@ -8,7 +8,7 @@ function searchByCity(city){
   let searchResults = []
 
   for(let client of json){
-    if( city === client.city ){
+    if( city.toUpperCase() === client.city.toUpperCase() ){
       let match = {
         id: client.id,
         rep_name: client.rep_name,
