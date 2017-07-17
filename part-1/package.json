@@ -1,0 +1,23 @@
+{
+  "name": "part-1",
+  "version": "1.0.0",
+  "description": "Part 1: Write tests and solutions for these functions",
+  "main": "functions.js",
+  "scripts": {
+    "test": "mocha tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaycribas/phase-2-challenge.git"
+  },
+  "author": "Jay Cribas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaycribas/phase-2-challenge/issues"
+  },
+  "homepage": "https://github.com/jaycribas/phase-2-challenge#readme",
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2"
+  }
+}
