@@ -5,9 +5,9 @@ const name = process.argv[2]
 const json  = JSON.parse(fs.readFileSync('clients.json'))
 
 function searchByCompany(name){
-  const searchResults = []
+  let searchResults = []
 
-  for(var client of json){
+  for(let client of json){
     let match = client.company.toUpperCase()
 
     if( match.startsWith(name.toUpperCase()) ) {
