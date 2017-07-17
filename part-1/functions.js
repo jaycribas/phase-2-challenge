@@ -1,3 +1,8 @@
+/* Show a month
+
+Write a function month(date) to find the month for a given Date object, returing the name of the month as a string ('January', 'February', 'March', 'April', 'May', ... etc).
+*/
+
 function month(date){
   let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
@@ -10,4 +15,18 @@ function month(date){
   return "Please enter a valid date."
 }
 
-module.exports = { month }
+/* Reverse a sentence
+
+Write a function reverseSentence(string) that takes a string of words and returns a string with the words in reverse order. If there is only one word in the string return it unchanged. Consider any series of non-space characters a word.
+*/
+
+function reverseSentence(string){
+  if( typeof string == 'string' ){
+    let wordsArray = string.split(' ')
+    return wordsArray.reverse().join(' ')
+  }
+}
+
+
+
+module.exports = { month, reverseSentence }
