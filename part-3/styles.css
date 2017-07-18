@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+}
+
+header{
+  display: flex;
+  background-color: black;
+  width: 80%;
+  height: 10vh;
+  margin: auto;
+  padding: 0 10%;
+  color: white;
+  justify-content: space-between;
+
+}
+
+.logout{
+  align-self: flex-end;
+}
+
+main{
+  background-color: rgb(180, 180, 180);
+  display: flex;
+  width: 80%;
+  margin: auto;
+  height: 90vh;
+}
+
+aside{
+  background-color: rgb(151, 200, 230);
+  flex: 1;
+}
+
+article{
+  flex: 4
+}
