@@ -16,6 +16,10 @@ describe('function reverseSentence(string)', () => {
     let sentence = 'The cat jumped over the dog.'
     expect(reverseSentence(sentence)).to.deep.equal('dog. the over jumped cat The')
   })
+  it('should return the same word', () => {
+    let sentence2 = 'Boop'
+    expect(reverseSentence(sentence2)).to.deep.equal('Boop')
+  })
   it('should be undefined on invalid input', () => {
     expect(reverseSentence(1982)).to.be.undefined
   })
