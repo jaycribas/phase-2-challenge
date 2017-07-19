@@ -1,36 +1,95 @@
-body{
-  margin: 0;
+html{
+  height: 100%;
 }
+
+body{
+  color: white;
+  background-color: #252525;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* * *  H E A D E R  * * */
 
 header{
   display: flex;
   background-color: black;
   width: 80%;
-  height: 10vh;
+  height: 75px;
   margin: auto;
   padding: 0 10%;
   color: white;
   justify-content: space-between;
-
+  position: fixed;
 }
 
 .logout{
   align-self: flex-end;
 }
 
+/* * *  M A I N  C O N T A I N E R  * * */
+
 main{
-  background-color: rgb(180, 180, 180);
-  display: flex;
   width: 80%;
   margin: auto;
-  height: 90vh;
+  height: 90%;
 }
+
+aside, article {
+  top: 75px;
+}
+
+/* * *  S I D E B A R  * * */
 
 aside{
-  background-color: rgb(151, 200, 230);
-  flex: 1;
+  background-color: #1b1b1b;
+  height: 90vh;
+  width: 17%;
+  position: fixed;
 }
 
+ul, h4{
+  margin: 30px;
+  padding: 0;
+}
+
+ul{
+  font-weight: 300;
+  list-style: none;
+}
+
+li{
+  margin-top: 20px;
+}
+
+a{
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+:target:before {
+  content: "";
+  display: block;
+  height: 90px;
+  margin: -90px;
+}
+
+/* * *  A R T I C L E  * * */
+
 article{
-  flex: 4
+  width: 70%;
+  padding: 100px 0 0 30%;
+}
+
+table{
+  border-spacing: 20px;
+}
+
+th{
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 1.2em;
+  font-style: italic;
 }
