@@ -23,7 +23,9 @@ Write a function reverseSentence(string) that takes a string of words and return
 function reverseSentence(string){
   if( typeof string == 'string' ){
     let wordsArray = string.split(' ')
-    return wordsArray.reverse().join(' ')
+    return wordsArray
+            .reverse()
+            .join(' ')
   }
 }
 
@@ -31,10 +33,27 @@ function reverseSentence(string){
 
 Write a function nameProps(obj) that returns the names of the properties an object has in alphabetical order. Ignore symbolic properties and count only the "own properties" (not inherited) of the object.
 */
+
 function nameProps(obj){
   if(typeof obj === 'object'){
     return Object.keys(obj).sort()
   }
 }
 
-module.exports = { month, reverseSentence, nameProps }
+/* Write a function filterBetween(array, min, max) that takes an array of strings, a min value, and a max value. It returns a new array containing only the elements that come after min alphabetically and before max.
+*/
+
+function filterBetween(array, min, max){
+  if( typeof array === 'object' &&
+      typeof min == 'string' &&
+      typeof max == 'string') {
+
+    let tempArr = array.concat(min, max).sort()
+    let startSlice = tempArr.indexOf(min) + 1
+    let endSlice = tempArr.indexOf(max)
+    
+    return tempArr.slice(startSlice, endSlice)
+  }
+}
+
+module.exports = { month, reverseSentence, nameProps, filterBetween }

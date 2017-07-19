@@ -18,8 +18,8 @@ Each requirement has a point value. A fully complete requirement gets full point
 ## General Requirements
 
 - [x] __10:__ Solution is in a public GitHub repository called `phase-2-challenge`.
-- [ ] __10:__ Solution repository has 4 folders: `part-1`, `part-2`, and `part-3`, and `part-4`.
-- [ ] __20:__ Git history shows frequent commits.
+- [x] __10:__ Solution repository has 4 folders: `part-1`, `part-2`, and `part-3`, and `part-4`.
+- [x] __20:__ Git history shows frequent commits.
 
 ## Part 1: Write tests and solutions for these functions
 
@@ -106,10 +106,10 @@ filterBetween(arr, 'chickadee', 'chimpanzee') // => []
 
 #### Requirements
 
-- [ ] __10:__ A test using expected/valid inputs for the `filterBetween()` function is written in `tests.js`.
-- [ ] __10:__ A test using unexpected/invalid inputs for the `filterBetween()` function is written in `tests.js`.
-- [ ] __30:__ Correct implementation of the `filterBetween()` is defined in `functions.js`.
-- [ ] __10:__ Tests for `filterBetween()` are passing.
+- [x] __10:__ A test using expected/valid inputs for the `filterBetween()` function is written in `tests.js`.
+- [x] __10:__ A test using unexpected/invalid inputs for the `filterBetween()` function is written in `tests.js`.
+- [x] __30:__ Correct implementation of the `filterBetween()` is defined in `functions.js`.
+- [x] __10:__ Tests for `filterBetween()` are passing.
 
 ## Part 2: Extract data from JSON file
 
@@ -200,17 +200,17 @@ Design a layout to match the following wireframe:
 
 ### Requirements
 
-- [ ] __10:__ All files are stored under the `part-3/` folder
-- [ ] __20:__ No third party CSS libraries are used (all code must be written from scratch)
-- [ ] __10:__ HTML and CSS are separated into their own files.
-- [ ] __20:__ Page has a full-width header with the site title "Filmtube" and a button "Logout"
-- [ ] __10:__ Site title "Filmtube" is aligned to the left side of the header
-- [ ] __10:__ "Logout" button is aligned to the right side of the header
-- [ ] __20:__ Page has a "Categories" sidebar with all categories for movies
-- [ ] __10:__ Page has a main content area showing each of the movies
-- [ ] __20:__ Main content lists all movies name, duration, and a "Play" button
-- [ ] __20:__ Clicking on a category in the "Categories" sidebar will jump to that category
-- [ ] __10:__ Main content organizes all movies by section
+- [x] __10:__ All files are stored under the `part-3/` folder
+- [x] __20:__ No third party CSS libraries are used (all code must be written from scratch)
+- [x] __10:__ HTML and CSS are separated into their own files.
+- [x] __20:__ Page has a full-width header with the site title "Filmtube" and a button "Logout"
+- [x] __10:__ Site title "Filmtube" is aligned to the left side of the header
+- [x] __10:__ "Logout" button is aligned to the right side of the header
+- [x] __20:__ Page has a "Categories" sidebar with all categories for movies
+- [x] __10:__ Page has a main content area showing each of the movies
+- [x] __20:__ Main content lists all movies name, duration, and a "Play" button
+- [x] __20:__ Clicking on a category in the "Categories" sidebar will jump to that category
+- [x] __10:__ Main content organizes all movies by section
 
 ## Part 4: Quiz time!
 
