@@ -4,7 +4,12 @@ Write a function month(date) to find the month for a given Date object, returing
 */
 
 function month(date){
-  let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+  let months = [
+    "January", "February", "March",
+    "April", "May", "June",
+    "July", "August", "September",
+    "October", "November", "December"
+  ]
 
   if(date instanceof Date){
     let monthNum = date.getMonth()
@@ -21,7 +26,7 @@ Write a function reverseSentence(string) that takes a string of words and return
 */
 
 function reverseSentence(string){
-  if( typeof string == 'string' ){
+  if(typeof string == 'string'){
     let wordsArray = string.split(' ')
     return wordsArray
             .reverse()
@@ -44,15 +49,16 @@ function nameProps(obj){
 */
 
 function filterBetween(array, min, max){
-  if( typeof array === 'object' &&
-      typeof min == 'string' &&
-      typeof max == 'string') {
+  if(
+    Array.isArray(array) &&
+    typeof min == 'string' &&
+    typeof max == 'string'
+  ){
+    let newArr = array.concat(min, max).sort()
+    let startSlice = newArr.indexOf(min) + 1
+    let endSlice = newArr.indexOf(max)
 
-    let tempArr = array.concat(min, max).sort()
-    let startSlice = tempArr.indexOf(min) + 1
-    let endSlice = tempArr.indexOf(max)
-    
-    return tempArr.slice(startSlice, endSlice)
+    return newArr.slice(startSlice, endSlice)
   }
 }
 
