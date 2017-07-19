@@ -1,36 +1,57 @@
-html{
+html {
   height: 100%;
 }
 
-body{
+body {
   color: white;
   background-color: #252525;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
 
+button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  background-color: white;
+  color: black;
+}
+
+button:focus {
+  outline: 0;
+}
+
 /* * *  H E A D E R  * * */
 
-header{
+header {
   display: flex;
   background-color: black;
-  width: 80%;
+  width: 70%;
   height: 75px;
-  margin: auto;
-  padding: 0 10%;
+  padding: 0 25% 0 12.5%;
   color: white;
   justify-content: space-between;
   position: fixed;
 }
 
 .logout{
-  align-self: flex-end;
+  align-self: center;
+  top: 30px;
 }
 
 /* * *  M A I N  C O N T A I N E R  * * */
 
-main{
-  width: 80%;
+main {
+  width: 75%;
   margin: auto;
   height: 90%;
 }
@@ -41,35 +62,34 @@ aside, article {
 
 /* * *  S I D E B A R  * * */
 
-aside{
+aside {
   background-color: #1b1b1b;
   height: 90vh;
   width: 17%;
   position: fixed;
 }
 
-ul, h4{
+ul, h4 {
   margin: 30px;
   padding: 0;
 }
 
-ul{
+ul {
   font-weight: 300;
   list-style: none;
 }
 
-li{
+li {
   margin-top: 20px;
 }
 
-a{
+a {
   display: block;
   color: white;
   text-decoration: none;
 }
 
-:target:before {
-  content: "";
+a[name] {
   display: block;
   height: 90px;
   margin: -90px;
@@ -77,19 +97,38 @@ a{
 
 /* * *  A R T I C L E  * * */
 
-article{
+article {
   width: 70%;
-  padding: 100px 0 0 30%;
+  padding: 80px 0 0 27%;
 }
 
-table{
-  border-spacing: 20px;
+table {
+  width: 96%;
+  border-collapse: collapse;
 }
 
-th{
+td {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+th.category {
+  padding-top: 30px;
+}
+
+th {
   font-weight: 300;
-  text-transform: uppercase;
   text-align: left;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-style: italic;
+}
+
+h1.movies {
+  font-size: 3em;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+td.time {
+  text-align: right;
 }
